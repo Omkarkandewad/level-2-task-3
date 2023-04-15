@@ -1,0 +1,133 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+  background-image: linear-gradient(to right, #10c7c7, #bdba04);
+
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding: 0 20px;
+}
+
+#header h2{font-size: 2rem;}
+
+.user_input{
+  margin-top: 2px;
+  width: 50%;
+  text-align: center;
+  margin-left :20%;
+}
+
+.user_input input{
+  width: 50%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid rgb(241, 177, 177);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  
+
+  
+}
+
+.user_input input:focus{
+  box-shadow: 0 0 5px #d228e2;
+  border: 1px solid #271c20;
+}
+
+.user_input button{
+  cursor: pointer;
+  padding: 8px;
+  width: fit-content;
+  color: black;
+  background-color: rgb(252, 109, 109);
+  border: 1px solid rgb(22, 12, 12);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.user-input button:hover{
+  background-color: transparent;
+  color: rgb(245, 128, 128);
+}
+
+#to_do_list{
+  width: 500px;
+  margin: auto;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 1rem;
+  color: #454545;
+  margin-top:10px;
+  font-size: 1rem;
+  background-color: rgb(238, 250, 169);
+  border: 1px solid rgb(17, 17, 17);
+
+  
+}
+
+.item:hover{
+  box-shadow: 0 0 10px #E22865;
+  border: 1px solid #E22865;
+}
+
+.item i{
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
+
+@media(max-width:768px){
+  .container{width: 95%;}
+  
+  #header{
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #header h2{margin: 10px 0;}
+
+  .user_input{width: 100%;}
+
+  #to_do_list{width: 100%;}
+}
+
+@media(max-width:480px){
+  .user_input input{width: 74%;}
+}
+
+@media(max-width:320px){
+  .user_input input{width: 60%;}
+}
